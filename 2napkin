@@ -1,0 +1,50 @@
+#!/bin/bash
+
+
+###Napkin task
+echo "1: Continue"
+while true; do
+read -rsn1 input
+if [ "$input" = "1" ]; then
+    #aplay niceworking.wav
+    echo "Our first task is to get a napkin and a placemat from this shelf over there"
+    echo "CONTROL: turn robot around and move toward shelf" 
+    echo " "
+    break
+fi
+done
+
+echo "1: Continue"
+while true; do
+read -rsn1 input
+if [ "$input" = "1" ]; then
+    #aplay niceworking.wav
+    espeak -v en "You can pick any placemat you like and the napkins are on top of the shelf - you'll need just one"
+    break
+fi
+done
+
+echo "1: user takes napkins and placemats"
+while true; do
+read -rsn1 input
+if [ "$input" = "1" ]; then
+    #aplay niceworking.wav
+    espeak -v en "Yes, take them with you. In fact, I can carry them for you."
+    break
+fi
+done
+
+echo "1: User places items on robot"
+echo "2: Confusion, non-compliance"
+
+while true; do
+read -rsn1 input
+if [ "$input" = "1" ]; then
+    espeak -v en "Yes, that’s alright."
+    break
+fi
+if [ "$input" = "2" ]; then
+    espeak -v en "I can carry them for you, just place them on me."
+    break
+fi
+done
