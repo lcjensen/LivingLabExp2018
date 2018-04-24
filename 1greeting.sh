@@ -27,6 +27,7 @@ done
 
 echo "1: Positive"
 echo "2: Negative"
+echo "3: None"
 echo " "
 
 while true; do
@@ -34,10 +35,11 @@ read -rsn1 input
 if [ "$input" = "1" ]; then
     echo "I'm happy to hear that"
     break
-fi
-if [ "$input" = "2" ]; then
+elif [ "$input" = "2" ]; then
     echo "I'm sorry to hear that"
     break
+else echo ""
+break
 fi
 done
 
