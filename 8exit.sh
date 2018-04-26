@@ -12,12 +12,40 @@ if [ "$input" = "1" ]; then
 fi
 done
 
+echo "1: Sits down"
+echo "2: Stays up"
+
+while true; do
+read -rsn1 input
+if [ "$input" = "1" ]; then
+    #aplay niceworking.wav
+    echo "Please help yourself with the water."
+    break
+elif [ "$input" = "2" ]; then
+    #aplay niceworking.wav
+    echo "Please have a seat."
+	echo " "
+	echo "1: Continue"
+	while true; do
+	read -rsn1 input
+	if [ "$input" = "1" ]; then
+    		#aplay niceworking.wav
+    		echo "Help yourself with the water"
+    		break
+	fi
+	done
+fi
+done
+    
+
+
 echo "1: Continue"
 while true; do
 read -rsn1 input
 if [ "$input" = "1" ]; then
     #aplay niceworking.wav
-    echo "Could you please fill out the questionnaire?"
+    echo "Can you also please fill out the questionnaire?" 
+    echo "it's on the ipad on the table"
     break
 fi
 done

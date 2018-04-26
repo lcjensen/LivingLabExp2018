@@ -16,16 +16,6 @@ if [ "$input" = "1" ]; then
 fi
 done
 
-echo "1: Continue"
-while true; do
-read -rsn1 input
-if [ "$input" = "1" ]; then
-    #aplay niceworking.wav
-    echo "You can find it on the right side of the shelf."
-    break
-fi
-done
-
 while [ $control = "0" ]
 do
 	if [ "$incCond" = "inc" ]; then

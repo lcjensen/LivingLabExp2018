@@ -6,7 +6,7 @@ while true; do
 read -rsn1 input
 if [ "$input" = "1" ]; then
     #aplay niceworking.wav
-    echo "Our next step is to get a glass. You can find one on that little table over there."
+    echo "Our next step is to get a glass. You can find one on that table over there."
     echo "CONTROL: move robot in direction of table"
     echo " "
     break

@@ -43,7 +43,7 @@ read -rsn1 input
 
   	elif [ "$input" = "3" ];
   	then
-	echo "Yes, there"
+	echo "Yes, there in the box"
 	echo "Great, please take them with you"
 	control="1"
 	break

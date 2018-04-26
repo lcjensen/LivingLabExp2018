@@ -1,18 +1,5 @@
 #!/bin/bash
 
-##create global variables
-#gender - male / female
-gender="male"
-export gender
-
-#persuasion condition - 1 / 2 / 3
-perCond="2"
-export perCond
-
-#Incremental condition - inc / noinc
-incCond="noinc"
-export incCond
-
 ###Greeting
 echo "1: Start"
 while true; do
