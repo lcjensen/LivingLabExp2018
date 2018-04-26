@@ -35,6 +35,7 @@ read -rsn1 input
 if [ "$input" = "1" ]; then
     #aplay niceworking.wav
 	if [ "$perCond" = "1" ]; then
+		echo "It’s important to drink enough water during the day"
 		if [ "$gender" = "male" ]; then
 		echo "Most male participants drink 0,5l after this game"
 		elif [ "$gender" = "female" ]; then
@@ -42,12 +43,7 @@ if [ "$input" = "1" ]; then
 		fi
 	elif [ "$perCond" = "2" ]; then
 		echo "Most participants drink 0,5l after this game."
-	
-	elif [ "$perCond" = "3" ]; then
-		echo "Heidi Klum drinks around 3l every day"
-	else echo "not found "
 	fi
-    echo ""
     break
 fi
 done
@@ -59,7 +55,7 @@ while true; do
 read -rsn1 input
 if [ "$input" = "1" ]; then
     #aplay niceworking.wav
-	echo "Great"
+	echo "Great, okay. Next step."
 	echo " "
     break
 fi

@@ -1,32 +1,6 @@
 #!/bin/bash
 
-echo $incCond
-
 control="0"
-
-###Napkin task
-echo "1: Continue"
-while true; do
-read -rsn1 input
-if [ "$input" = "1" ]; then
-    #aplay niceworking.wav
-    echo "Our first task is to get a napkin and a placemat from this shelf over there"
-    echo "CONTROL: turn robot around and move toward shelf" 
-    echo " "
-    break
-fi
-done
-
-echo "1: Continue"
-while true; do
-read -rsn1 input
-if [ "$input" = "1" ]; then
-    #aplay niceworking.wav
-    echo "You can pick any placemat you like."
-    echo " "
-    break
-fi
-done
 
 echo "1: Continue"
 while true; do
@@ -38,7 +12,6 @@ if [ "$input" = "1" ]; then
     break
 fi
 done
-
 
 
 if [ "$incCond" = "inc" ]; then
@@ -70,7 +43,8 @@ read -rsn1 input
 
   	elif [ "$input" = "3" ];
   	then
-	echo "Yes, that’s right – please take them with you"
+	echo "Yes, there"
+	echo "Great, please take them with you"
 	control="1"
 	break
 	fi
@@ -98,7 +72,7 @@ while true; do
 read -rsn1 input
 if [ "$input" = "1" ]; then
     #aplay niceworking.wav
-    echo "Yes, that’s alright."
+    echo "You are welcome to put everything on my tray."
     echo " "
     break
 fi
