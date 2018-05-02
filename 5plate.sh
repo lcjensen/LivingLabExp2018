@@ -5,8 +5,10 @@ echo "1: Continue"
 while true; do
 read -rsn1 input
 if [ "$input" = "1" ]; then
-    #aplay niceworking.wav
+    play LivingLabAudio/plate1.mp3
+    echo " "
     echo "Now let’s get a plate. "
+    echo " "
     echo "CONTROL: move robot in the direction of the plates" 
     break
 fi
@@ -18,6 +20,8 @@ echo "2: User keeps plate"
 while true; do
 read -rsn1 input
 if [ "$input" = "2" ]; then
+	play LivingLabAudio/plate2.mp3
+    	echo " "
 	echo "If you like, I can carry it for you."
 	echo " "
 fi

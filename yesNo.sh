@@ -7,11 +7,13 @@ echo "2. No"
 while true; do
 read -rsn1 input
 if [ "$input" = "1" ]; then
-    #aplay niceworking.wav
+    play LivingLabAudio/yes.mp3
+    echo " "
     echo "Yes"
     break
 elif [ "$input" = "2" ]; then
-    #aplay niceworking.wav
+    play LivingLabAudio/no.mp3
+    echo " "
     echo "No"
     break
 fi

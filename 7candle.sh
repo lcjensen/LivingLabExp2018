@@ -9,9 +9,11 @@ echo "1: Continue"
 while true; do
 read -rsn1 input
 if [ "$input" = "1" ]; then
-    #aplay niceworking.wav
+    play LivingLabAudio/candle1.mp3
+    echo " "
     echo  "The last thing we need to pick up, before we go to the table, is a candle. "
-    echo "move robot in the direction of the candles" 
+    echo " " 
+    echo "CONTROL: move robot in the direction of the candles" 
     break
 fi
 done
@@ -22,6 +24,7 @@ do
 
 	
 		if [ "$count" = "0" ]; then
+    		echo " "
 		echo "1: More to the right"
 		else 
 		echo "1: a bit bit more"
@@ -34,14 +37,22 @@ do
 	
 		if [ "$input" = "1" ]; then
 			if [ "$count" = "0" ]; then
+			play LivingLabAudio/candle2_1more.mp3
+    			echo " "
 			echo "More to the right"
 			count="1"
 			else 
+			play LivingLabAudio/candle2_2bit.mp3
+    			echo " "
 			echo "a little bit more"
 			fi
 		elif [ "$input" = "2" ]; then
-			echo "2: the candle is on the right side of the shelf"
+			play LivingLabAudio/candle2_3more.mp3
+    			echo " "
+			echo "the candle is on the right side of the shelf"
 		elif [ "$input" = "3" ]; then
+			play LivingLabAudio/candle2_4.mp3
+    			echo " "
 			echo "3: Yes, that’s right"
 			control="1"
 		fi
@@ -58,9 +69,13 @@ do
 		read -rsn1 input
 	
 		if [ "$input" = "1" ]; then
+			play LivingLabAudio/candle2_3.mp3
+    			echo " "
 			echo "the candle is on the right side of the shelf"
 		elif [ "$input" = "2" ]; then
-			echo "2: Yes, that’s right"
+			play LivingLabAudio/candle2_4.mp3
+    			echo " "
+			echo "Yes, that’s right"
 			control="1"
 		fi
 		break
