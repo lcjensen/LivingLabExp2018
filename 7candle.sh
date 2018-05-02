@@ -37,7 +37,7 @@ do
 			echo "More to the right"
 			count="1"
 			else 
-			echo "a bit bit more"
+			echo "a little bit more"
 			fi
 		elif [ "$input" = "2" ]; then
 			echo "2: the candle is on the right side of the shelf"

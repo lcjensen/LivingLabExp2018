@@ -35,7 +35,7 @@ if [ "$input" = "1" ]; then
 	fruit="0
 "elif [ "$input" = "2" ]; then
 	echo "ah, okay, you picked a fruit! In this case, we should probably also pick up a knife!"	
-	echo " there is on top of the drawer."
+	echo " there it is, on top of the drawer."
 	fruit="1"
 fi
 break
