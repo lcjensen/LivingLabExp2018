@@ -55,3 +55,5 @@ done
 export incCond
 export perCond
 export gender
+
+./1greeting.sh
