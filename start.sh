@@ -15,27 +15,27 @@ elif [ "$input" = "2" ]; then
 fi
 done
 
-echo "Gender"
-echo "1: 0"
-echo "2: Gender"
-echo "3: People"
+echo "Persuasion Condition"
+echo "0: 0"
+echo "1: Gender"
+echo "2: People"
 echo " "
 
 while true; do
 read -rsn1 input
-if [ "$input" = "1" ]; then
-	perCond="1"
+if [ "$input" = "0" ]; then
+	perCond="0"
+    	break
+elif [ "$input" = "1" ]; then
+	perCond="gender"
     	break
 elif [ "$input" = "2" ]; then
-	perCond="2"
-    	break
-elif [ "$input" = "0" ]; then
-	perCond="0"
+	perCond="people"
     	break
 fi
 done
 
-echo "Gender"
+echo "Incremental Condition"
 echo "1: Incremental"
 echo "2: Non-incremental"
 echo " "
@@ -51,9 +51,11 @@ elif [ "$input" = "2" ]; then
 fi
 done
 
+place="0"
 
+export place
 export incCond
 export perCond
 export gender
 
-./1greeting.sh
+. ./1greeting.sh

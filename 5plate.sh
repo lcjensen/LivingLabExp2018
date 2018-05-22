@@ -21,10 +21,24 @@ while true; do
 read -rsn1 input
 if [ "$input" = "2" ]; then
     	echo " "
-	echo "If you like, I can carry it for you."
+	echo "If you like I can carry it for you"
 	echo " "
-	play LivingLabAudio/plate2.mp3
+	play LivingLabAudio/plate3.mp3
+elif [ "$input" = "1" ]; then
+	echo " "
 fi
 break	
+done
+
+echo "1: Continue"
+while true; do
+read -rsn1 input
+if [ "$input" = "1" ]; then
+    echo " "
+    echo "Very good "
+    echo " "
+    play LivingLabAudio/plate2.mp3
+    break
+fi
 done
 ./6cookies.sh

@@ -48,4 +48,4 @@ if [ "$input" = "1" ]; then
 fi
 done
 
-./2placemat.sh
+. ./2placemat.sh
