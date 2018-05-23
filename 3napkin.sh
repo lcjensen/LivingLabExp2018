@@ -9,7 +9,7 @@ while true; do
 read -rsn1 input
 if [ "$input" = "1" ]; then
     echo " "
-    echo "The napkins are on top of the shelf – you’ll need just one."
+    echo "Then we need a napkin – you’ll need just one."
     echo " "
     play LivingLabAudio/napkins1.mp3
     break
@@ -39,7 +39,7 @@ read -rsn1 input
 		echo ""
 		play LivingLabAudio/napkins2Higher.mp3
 		elif [ "$incCond" = "noinc" ]; then
-		echo "Take the napkins on the top shelf"
+		echo "They are on the top shelf"
 		echo " "
 		play LivingLabAudio/napkins3.mp3
 		fi 
@@ -57,7 +57,7 @@ read -rsn1 input
 
   	elif [ "$input" = "3" ]; then
    	echo " "
-	echo "Take the napkins on the top shelf"
+	echo "They are on the top shelf"
 	echo " "
 	play LivingLabAudio/napkins3.mp3
 	fi
