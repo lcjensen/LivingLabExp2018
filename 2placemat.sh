@@ -15,6 +15,7 @@ if [ "$input" = "1" ]; then
 fi
 done
 
+
 echo "1: Continue"
 while true; do
 read -rsn1 input
@@ -23,10 +24,30 @@ if [ "$input" = "1" ]; then
     echo "You can pick any placemat you like."
     echo " "
     play LivingLabAudio/placemat2.mp3
-    break
+    break    
 fi
 done
 
+while [ $control = "0" ]
+do
+
+echo "1. Continue"
+echo "2. Repeat"
+while true; do
+read -rsn1 input
+if [ "$input" = "2" ]; then
+    echo " "
+    echo "You can pick any placemat you like."
+    echo " "
+    play LivingLabAudio/placemat2.mp3
+    break
+elif [ "$input" = "1" ]; then
+    echo " "
+    control="1"
+    break
+fi
+done
+done
 
 echo "1: Green placemat"
 echo "2: Red placemat"

@@ -1,4 +1,5 @@
 #!/bin/bash
+control="0"
 
 ###A glass
 echo "1: Continue"
@@ -15,8 +16,11 @@ if [ "$input" = "1" ]; then
 fi
 done
 
-echo "1: User puts napkins on robot"
-echo "2: User keeps the napkins"
+while [ "$control" = "0" ]
+do
+echo "1: User puts glass on robot"
+echo "2: User keeps the glass"
+echo "3: User does not pick up glass"
 echo " "
 while true; do
 read -rsn1 input
@@ -26,18 +30,26 @@ if [ "$input" = "1" ] && [ "$place" = "0" ]; then
     let "place++"
     echo " "
     play LivingLabAudio/napkins6.mp3
+    control="1"
     break
 elif [ "$input" = "1" ] && [ "$place" > "0" ]; then
     echo " "
     echo "Great"
     echo " "
     play LivingLabAudio/great.mp3
+    control="1"
     break
 elif [ "$input" = "2" ]; then
 	echo " "
+	control="1"
+	break
+elif [ "$input" = "3" ]; then
+	echo "please pick up a glass"
+        play LivingLabAudio/glass5.mp3
 else
 break
 fi
+done
 break
 done
 
