@@ -15,7 +15,7 @@ if [ "$input" = "1" ]; then
 fi
 done
 
-while [ "$control" = "0" ];
+while [ "$control" = "0" ]
 do
 echo "1: User places plate on robot"
 echo "2: User keeps plate"
@@ -30,14 +30,16 @@ if [ "$input" = "2" ]; then
 	echo " "
 	play LivingLabAudio/plate3.mp3
 	control="1"
+	break
 elif [ "$input" = "1" ]; then
 	echo " "
 	control="1"
+	break
 elif [ "$input" = "3" ];then
 	echo "Please pick up a plate "
 	play LivingLabAudio/plate3_1.mp3
+	break
 fi
-break	
 done
 done
 

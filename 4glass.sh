@@ -1,6 +1,6 @@
 #!/bin/bash
 control="0"
-place="0"
+
 ###A glass
 echo "1: Continue"
 while true; do
