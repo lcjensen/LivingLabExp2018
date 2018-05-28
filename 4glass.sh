@@ -1,6 +1,6 @@
 #!/bin/bash
 control="0"
-
+place="0"
 ###A glass
 echo "1: Continue"
 while true; do
@@ -46,11 +46,9 @@ elif [ "$input" = "2" ]; then
 elif [ "$input" = "3" ]; then
 	echo "please pick up a glass"
         play LivingLabAudio/glass5.mp3
-else
-break
+	break
 fi
 done
-break
 done
 
 echo "1: Continue"
