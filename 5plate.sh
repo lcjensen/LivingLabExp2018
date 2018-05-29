@@ -48,6 +48,8 @@ fi
 done
 done
 
+control="0"
+
 echo "1: Green placemat"
 echo "2: Red placemat"
 
@@ -80,7 +82,7 @@ read -rsn1 input
 if [ "$input" = "2" ]; then
     	echo " "
 	echo "If you like I can carry it for you"
-	let place++
+	let "place++"
 	echo " "
 	play LivingLabAudio/plate3.mp3
 	control="1"
